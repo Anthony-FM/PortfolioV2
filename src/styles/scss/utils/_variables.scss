@@ -1,0 +1,60 @@
+// _variables.scss
+
+// Palette principale
+$color-dark: #1F271B;       // Fond principal, texte clair
+$color-accent: #F0A202;     // Boutons, liens, hover
+$color-soft-green: #B6D094; // Fonds secondaires, backgrounds doux
+$color-burgundy: #6A2E35;   // Titres, contrastes marqués
+$color-muted: #9F9AA4;      // Texte secondaire, éléments discrets
+
+// Utilitaires généraux
+$color-white: #ffffff;
+$color-black: #000000;
+
+// Typo
+$font-primary: 'Inter', sans-serif; // tu peux adapter selon ta préférence
+
+// Breakpoints
+$breakpoint-mobile: 768px;
+$breakpoint-tablet: 1024px;
+
+// Color
+.dark-color {
+    color: $color-dark;
+}
+
+.accent-color {
+    color: $color-accent;
+}
+
+.softGreen-color {
+    color: $color-soft-green;
+}
+
+.burgundy-color {
+    color: $color-burgundy;
+}
+
+.muted-color {
+    color: $color-muted;
+}
+// Background-color
+.dark-bg {
+    background-color: $color-dark;
+}
+
+.accent-bg {
+    background-color: $color-accent;
+}
+
+.softGreen-bg {
+background-color: $color-soft-green;
+}
+
+.burgundy-bg {
+    background-color: $color-burgundy;
+}
+
+.muted-bg {
+    background-color: $color-muted;
+}

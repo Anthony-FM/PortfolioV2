@@ -1,0 +1,23 @@
+@import "./base/reset.scss";
+
+@import "./utils/variables.scss";
+@import "./utils/breakpoint.scss";
+@import "./utils/mixins.scss";
+@import "./utils/animations";
+
+@import "./base/base.scss";
+@import "./base/typography.scss";
+
+@import "./components/menu";
+@import "../../components/Button/buttonAnimated";
+@import "./components/app";
+@import "./components/FlipClockLoader";
+@import "../../components/FilpLoader/FlipCounter";
+
+@import "../../components/HomeSection//HomeSection.scss";
+@import "../../components/HomeSection/BlockMask/BlockMask.scss";
+@import "../../components/HomeSection/TitleComponent//TitleComponent.scss";
+
+@import "../../components//About//about.scss";
+@import "../../components/HomeSection//HeroText/HeroText.scss";
+@import "../../components//HomeSection/FullScreenMask/FullScreenMask.scss";

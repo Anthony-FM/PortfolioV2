@@ -1,0 +1,37 @@
+.vhs-effect {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 99999;
+
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.02),
+    rgba(255, 255, 255, 0.02) 1px,
+    transparent 1px,
+    transparent 2px
+  );
+
+  mix-blend-mode: screen;
+  opacity: 0.1;
+
+  animation: scanlines 0.2s infinite, flicker 1.5s infinite alternate;
+}
+
+@keyframes scanlines {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 2px;
+  }
+}
+
+@keyframes flicker {
+  0% { opacity: 0.7; transform: translate(0px, 0px) scale(1); }
+  50% { opacity: 0.2; transform: translate(-0.5px, 0.3px) scale(1.001); }
+  100% { opacity: 0.8; transform: translate(0.5px, -0.3px) scale(0.999); }
+}

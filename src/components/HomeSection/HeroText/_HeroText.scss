@@ -1,0 +1,68 @@
+.lettersContainer{
+    display: flex;
+    justify-content: flex-end;
+    color: $color-white;
+    position: absolute;
+    z-index: 99;
+    width: 80%;
+    padding: 1% 5% 0 0;
+    overflow: hidden;
+    
+    
+    & svg{
+        margin-right: 0.5em;
+        transform: rotate(35deg);
+        transition: rotate 0.3s ease-in;
+        // opacity: 0;
+        // transition: opacity 0.3s ease;
+    }
+    
+    &_container{          
+        display: flex;
+        flex-direction: column;
+        // opacity: 0;
+        // transition: opacity 0.3s ease;
+        & div{
+            overflow: hidden;
+            display: flex;  
+        }
+    }  
+}
+
+@for $i from 0 to 39 {
+    $base-delay: 2000ms;
+    $increment: 40ms;
+    $total-delay: $base-delay + ($increment * $i);
+
+    .letter--#{$i}{
+        animation: letterUp 1s backwards;
+        animation-delay: $total-delay;
+        color:$color-muted;
+        padding-bottom: 2px;
+        font-size: 1.9rem;
+
+        @include respond-to(large) {            
+            font-size: 1.8rem;
+        }
+        @include respond-to(desktop) {            
+            font-size: 1.2rem;
+        }
+        @include respond-to(tablet) {            
+            font-size: 1rem;
+        }
+        @include respond-to(mobile) {            
+            font-size: 0.8rem;
+        }        
+    }
+}
+
+.disappear {
+    animation: disappear 0.5s ease-out forwards;
+}
+.appear {
+    animation: appear 2s ease-in forwards;
+}
+
+// .visible {
+//     opacity: 1;
+// }

@@ -1,0 +1,12 @@
+.TitleComponentContainer{
+    width : 100%;  
+    max-width: 80vw;  
+    margin: 0 auto;
+    // animation: appear 1300ms ease-in;
+    & > svg{
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+}
+

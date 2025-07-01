@@ -1,0 +1,9 @@
+ul {
+    display: flex;
+    li {
+        border: 1em solid $color-burgundy;
+        padding: 10px;
+        border-radius:25%;
+        margin: 10px auto;
+    }
+}
