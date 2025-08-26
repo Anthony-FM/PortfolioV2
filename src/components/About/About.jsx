@@ -1,3 +1,6 @@
+import ProfilImage from "../../assets/photodeface.png"
+import AboutText from "./AboutText/AboutText"
+import ProfilPicture from "./ProfilPicture/ProfilPicture"
 
 export default function About({aboutRef}) {
   return (
@@ -6,7 +9,12 @@ export default function About({aboutRef}) {
         id="about"
         className="aboutContainer"
       >
-        <h1 style={{ fontSize: "4rem", color: "#fff" }}>À propos</h1>
+        
+        <AboutText />
+        <ProfilPicture 
+          image={ProfilImage}
+          alt="photo de profil Anthony Fouda-Many"
+        />
       </section>
   )
 }
