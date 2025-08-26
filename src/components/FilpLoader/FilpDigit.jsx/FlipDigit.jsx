@@ -29,10 +29,10 @@ export default function FlipDigit({ digit, duration, color }) {
   }, [digit, prev, duration]);
   
   useEffect(() => {
-    if(color === "muted-bg")  setDigitColor("muted-color") 
+    if(color === "muted-bg")  setDigitColor("dark-color") 
     if(color ==="burgundy-bg")  setDigitColor("burgundy-color") 
     if(color ==="softGreen-bg")  setDigitColor("softGreen-color")  
-    if(color ==="accent-bg")  setDigitColor("accent-color") 
+    if(color ==="accent-bg")  setDigitColor("burgundy-color") 
     if(color ==="dark-bg")  setDigitColor("dark-color") 
   }, [color])
 

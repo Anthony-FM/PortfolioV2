@@ -72,7 +72,7 @@ export default function FlipCounter({
 
   const digits = String(progress).padStart(3, "-").split("");
 
-  console.log(progress)
+  // console.log(progress)
   return (
     <AnimatePresence>
       {(progress < 100 || isHolding) && (
