@@ -2,7 +2,7 @@
     position: absolute;
     z-index: 2;
     width: 100%;
-    max-width: 80vw;
+    // max-width: 80vw;
     left: -0.4%;
     & > svg {
         width: 100%;
@@ -13,11 +13,11 @@
 
 @for $i from 1 to 18 {
   $base-delay: 300ms;
-  $increment: 60ms;
+  $increment: 80ms;
   $total-delay: $base-delay + ($increment * $i);
 
   .rect--#{$i} {
-    animation: BlocksGoUp 1.3s forwards;
+    animation: BlocksGoUp 2.6s forwards;
     animation-delay: $total-delay;
   }
 }

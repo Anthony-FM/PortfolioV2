@@ -16,7 +16,7 @@ import { motion, useSpring } from 'framer-motion';
  * @param {BlockMaskProps} props - Propriétés du composant.
  * @returns {JSX.Element} Masque SVG animé avec des rectangles verticaux.
  */
-function BlockMask({ scale, color }) {
+function BlockMask({ scale, color, titleRef }) {
   /**
    * Échelle animée (spring) appliquée au conteneur principal.
    */
@@ -76,6 +76,8 @@ function BlockMask({ scale, color }) {
     <motion.div
       className="BlockMaskContainer"
       style={{ scale: springScale }}
+      ref={titleRef}
+
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -93,12 +95,13 @@ function BlockMask({ scale, color }) {
             height={397.48}
             fill={color}
             className={`rect--${index + 1}`}
-            initial={{ opacity: 1, y: 20 }}
+            initial={{ opacity: 1, y: -5 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{
               delay: 3 + (index * 0.03),
-              duration: 0.4,
+              duration: 0.9,
               ease: 'easeOut',
+              opacity: 0
             }}
           />
         ))}
