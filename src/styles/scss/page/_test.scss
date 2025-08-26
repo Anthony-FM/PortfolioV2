@@ -1,0 +1,54 @@
+// .hero-sectionTest {
+//   height: 100vh;
+//   position: relative;
+//   overflow: hidden;
+//   background-image: url('src/assets/pictureOfMeBW.jpg'); /* ton image de fond */
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   background-size: cover;
+// }
+
+// .mask-wrapperTest {
+
+//     background: $color-dark; /* fond vert */
+//     position: absolute;
+//     inset: 0;
+
+//     mask-image: url('src/assets/Titre_Portfolio-test-tr-2.svg'); 
+//     mask-position: center;
+//     mask-size: 100%;
+//     mask-repeat: no-repeat;
+
+//     -webkit-mask-image: url('src/assets/Titre_Portfolio-test-tr-2.svg'); 
+//     -webkit-mask-repeat: no-repeat;
+//     -webkit-mask-position: center;
+//     -webkit-mask-size: 100%;
+    
+//     transition: mask-size 0.3s ease;
+// }
+// // //src/assets/Blocs-Masque-Test.svg
+// // //src/assets/Titre_Portfolio-Test.svg
+// .container {
+//   // width: min(100% - 3rem, 65rem);
+//   width: 100vw;
+//   margin-inline: auto;
+//   display: flex;
+// }
+
+// .hero {
+//   background-color: $color-dark;
+// }
+
+
+// .hero-image {
+//   height: 100vh;
+//   -webkit-mask-image: url("src/assets/Titre_Portfolio-Test.svg");
+//   -webkit-mask-size: contain;
+//   -webkit-mask-repeat: no-repeat;
+//   -webkit-mask-position: center;
+//   mask-image: url("src/assets/Titre_Portfolio-Test.svg");
+//   mask-size: contain;
+  
+//   width: 100vw;
+//   object-fit: cover;
+// }
