@@ -88,6 +88,19 @@ function AnimatedRoutes() {
             </motion.div>
           }
         />
+        <Route
+          path="*"
+          element={
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 1.5 }}
+            >
+              <div>404 Error</div>
+            </motion.div>
+          }
+        />
       </Routes>
     </AnimatePresence>
   );
@@ -96,30 +109,22 @@ function AnimatedRoutes() {
 function App() {
 
   const [ loadingFinish, setLoadingFinish ] = useState(false);
+  const toto = document.location
 
   return ( <>  
     {
-      // !hasInteracted ? (
-      //   <div
-      //     className='start'>
-      //     <ButtonAnimated 
-      //       action={() => setHasInteracted(true)} 
-      //       text="Let's go!!"
-      //     />
-      // </div>)       
-      // :      
-      // hasInteracted && 
-      // !loadingFinish ? (
-      //   <>
-      //     <CustomCursor />
-      //     <FlipCounter 
-      //       onFinish={(() => setLoadingFinish(true))}
-      //       speed={100}
-      //       animationDuration={100}
-      //       step='3'/>
-      //   </>
-      // ) 
-      // : 
+     
+      !loadingFinish && toto.pathname === "/" ? (
+        <>
+          <CustomCursor />
+          <FlipCounter 
+            onFinish={(() => setLoadingFinish(true))}
+            speed={100}
+            animationDuration={100}
+            step='3'/>
+        </>
+      ) 
+      : 
       
       (
         <BrowserRouter>      
