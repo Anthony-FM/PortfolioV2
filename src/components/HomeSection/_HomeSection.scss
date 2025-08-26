@@ -1,5 +1,5 @@
 .HomeSectionContainer {
-  background-image: url('/src/assets/pictureOfMeBW.jpg');
+  // background-image: url('/src/assets/pictureOfMeBW.jpg');
   // background-size: 100vh;
   background-repeat: no-repeat;
   background-position: center;
@@ -10,7 +10,7 @@
   overflow: hidden;
   display: flex;
   z-index: 1;
-  background-color: $color-dark;
+  // background-color: $color-dark;
   
 }
 
@@ -20,8 +20,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin: auto;
-  
+  margin: auto;  
   transform-origin: "center";
   
   &_heroTitle {
@@ -29,17 +28,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80%;
+    // width: 80%;
     margin: 0 auto;
     z-index: 0;
   }
 
   &_heroText {
-    position: relative;
+    position: absolute;
     display: flex;
     align-items: center;
     justify-content: flex-end;
     width: 80%;
+    height: 100vh;
+    margin-top: 15%;
     & > div{
       position: relative;
       z-index: 99;
@@ -47,3 +48,29 @@
   }
 }
 
+.container{
+      width: 100vw;
+      margin-inline: auto;
+      display: flex;
+      justify-content: center;
+}
+
+.hero {
+  background-color: $color-dark;
+}
+
+
+.hero-image {
+  height: 100vh;
+  -webkit-mask-image: url("src/assets/Titre_Portfolio-Test.svg");
+  -webkit-mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-image: url("src/assets/Titre_Portfolio-Test.svg");
+  mask-size: contain;
+  mask-position: center;
+  mask-repeat: no-repeat;
+  
+  width: 100vw;
+  object-fit: cover;
+}
